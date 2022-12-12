@@ -1,18 +1,16 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import Calendar from "./components/Calendar";
-import AddNote from "./components/AddNote";
-import UpdateNote from "./components/UpdateNote";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import Notes from "./components/Notes";
-import { Col, Container, Row } from "react-bootstrap";
-import GoogleLogin from "./components/google";
-// import KakaoLogin from "./components/KaKaoLogin";
-// import { gapi } from "gapi-script";
+import React from 'react'
+import { useSelector } from 'react-redux'
+import Calendar from './components/Calendar'
+import AddNote from './components/AddNote'
+import UpdateNote from './components/UpdateNote'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+import Notes from './components/Notes'
+import { Col, Container, Row } from 'react-bootstrap'
+import GoogleLogin from './components/google'
 
 function App() {
-  const showUpdateNote = useSelector((state) => state.note.showUpdateNote);
+  const showUpdateNote = useSelector((state) => state.note.showUpdateNote)
 
   return (
     <body>
@@ -23,8 +21,8 @@ function App() {
             <span
               onClick={() =>
                 window.open(
-                  "https://github.com/chayoonji/calendartodopa",
-                  "_blank"
+                  'https://github.com/chayoonji/calendartodopa',
+                  '_blank'
                 )
               }
             >
@@ -71,7 +69,7 @@ function App() {
         </footer>
       </>
     </body>
-  );
+  )
 }
 
-export default App;
+export default App
