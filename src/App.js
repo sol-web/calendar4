@@ -6,7 +6,7 @@ import UpdateNote from './components/UpdateNote'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import Notes from './components/Notes'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Card, Col, Container, Row } from 'react-bootstrap'
 import GoogleLogin from './components/google'
 
 function App() {
@@ -20,16 +20,25 @@ function App() {
           <nav>
             <span
               onClick={() =>
-                window.open(
-                  'https://github.com/chayoonji/calendartodopa',
-                  '_blank'
-                )
+                window.open('https://github.com/chayoonji/oodo.git', '_blank')
               }
             >
-              Menu1
+              차윤지
             </span>
-            <span>Menu2</span>
-            <span>Menu3</span>
+            <span
+              onClick={() =>
+                window.open('https://github.com/QWOFTQ/PortFolio', '_blank')
+              }
+            >
+              강채린
+            </span>
+            <span
+              onClick={() =>
+                window.open('https://github.com/sol-web/siteweb', '_blank')
+              }
+            >
+              김솔
+            </span>
             <span className="aApp">
               <GoogleLogin
                 success={(res) => console.log(res)}
@@ -64,9 +73,30 @@ function App() {
         <br></br>
         <br></br>
         <br></br>
-        <footer>
-          Copyright &copy; 2020 by Sumit Jangir. All Rights Reserved.
-        </footer>
+
+        <Card>
+          <h5>
+            <br></br>
+            <br></br>
+            강채린(92113437) 백엔드+프론트엔드 | 김솔(92113542)
+            백엔드+프론트엔드 | 차윤지(92113877) 백엔드+프론트엔드
+            <br></br>
+            <br></br>
+            <br></br>
+            <span
+              onClick={() =>
+                window.open('https://youtu.be/DplqQpflmy4', '_blank')
+              }
+            >
+              소개 영상
+            </span>
+          </h5>
+          <br></br>
+        </Card>
+        <br></br>
+        <br></br>
+        <br></br>
+        <footer> WWW___2002</footer>
       </>
     </body>
   )
